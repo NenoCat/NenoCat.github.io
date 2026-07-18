@@ -1,0 +1,24 @@
+<%- partial('partial/header') %>
+
+<div class="archive">
+  <h1 class="archive-title">归档</h1>
+  <% var lastYear = null; %>
+  <% page.posts.each(function(post) { %>
+    <% var currentYear = date(post.date, 'YYYY'); %>
+    <% if (currentYear !== lastYear) { %>
+      <% if (lastYear !== null) { %>
+        </ul>
+      <% } %>
+      <h2 class="archive-year"><%= currentYear %></h2>
+      <ul class="archive-list">
+    <% lastYear = currentYear; %>
+    <% } %>
+      <li>
+        <time><%= date(post.date, 'MM-DD') %></time>
+        <a href="<%= config.root + post.path %>"><%= post.title %></a>
+      </li>
+  <% }); %>
+  </ul>
+</div>
+
+<%- partial('partial/footer') %>

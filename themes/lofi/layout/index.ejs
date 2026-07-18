@@ -1,0 +1,22 @@
+<%- partial('partial/header') %>
+
+<div class="post-list">
+  <% page.posts.each(function(post) { %>
+    <article class="post-item">
+      <h2 class="post-title">
+        <a href="<%= config.root + post.path %>"><%= post.title %></a>
+      </h2>
+      <div class="post-meta">
+        <time><%= date(post.date, 'YYYY-MM-DD') %></time>
+        <% if (post.categories && post.categories.length) { %>
+          <span class="post-category"><%= post.categories.data[0].name %></span>
+        <% } %>
+      </div>
+      <p class="post-excerpt"><%= truncate(strip_html(post.content), {length: 120}) %></p>
+    </article>
+  <% }); %>
+</div>
+
+<%- partial('partial/pagination') %>
+
+<%- partial('partial/footer') %>

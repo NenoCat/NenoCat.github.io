@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= config.title %> | <%= config.subtitle %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="site-name">
+        <a href="<%= config.root %>"><%= config.site_name || config.title %></a>
+      </div>
+      <nav class="nav">
+        <% for (var i in theme.menu) { %>
+          <a href="<%- theme.menu[i] %>"><%= i %></a>
+        <% } %>
+      </nav>
+    </header>
+
+    <main class="main">
+      <%- body %>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <%= new Date().getFullYear() %> <%= config.author || 'NenoCat' %>. Powered by <a href="https://hexo.io">Hexo</a> & <a href="https://github.com/spatiostu/lofi">Lofi</a></p>
+    </footer>
+  </div>
+</body>
+</html>
