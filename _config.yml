@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: NenoCat's Blog
-subtitle: 技术分享与成长记录
-description: 一个程序员的博客
-keywords: Python, AI, 技术博客
-author: NenoCat
+title: Hi, 我是猫咪老师~
+subtitle: 写代码、看文章、撸铁、跳舞、发呆
+description: 分享技术干货和生活碎片，欢迎来rua~
+keywords: Python, AI,  技术博客, 生活碎碎念
+author: 猫咪老师
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://conqueror712.github.io
+url: https://nenocat.github.io
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: lofi
+theme: butterfly
 
 # Deployment
 ## Using GitHub Actions - no local deploy needed
