@@ -100,3 +100,18 @@ theme: butterfly
 
 # Deployment
 ## Using GitHub Actions - no local deploy needed
+
+# Markdown renderer with KaTeX math support
+markdown:
+  preset: default
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+  plugins:
+    - name: '@traptitech/markdown-it-katex'
+      options:
+        throwOnError: false
+        strict: false
