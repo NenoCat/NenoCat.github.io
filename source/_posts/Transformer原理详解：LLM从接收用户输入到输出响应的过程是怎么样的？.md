@@ -1,6 +1,6 @@
 ---
 title: Transformer原理详解：LLM从接收用户输入到输出响应的过程是怎么样的？
-date: 2026-07-18 23:30:02
+date: 2026-01-18 23:30:02
 categories:
   - 技术
 tags:

@@ -1,13 +1,13 @@
 ---
 title: 用 Python 打造自己的 CLI 工具
-date: 2026-07-18 23:30:04
+date: 2026-04-13 23:30:04
 categories:
   - 技术
 tags:
   - Python
 ---
 
-CLI（ Command Line Interface）最近特别火，我还特意写了一篇文章分析了一下：[AI 时代，为什么说万物皆可 CLI？](https://juejin.cn/post/7627365452815302666)。在码农眼中，命令行工具在日常开发中出现的频率很高，不管是数据处理脚本、自动化任务，还是代码辅助工具，背后基本都有 CLI 的影子。因此，本篇内容就来详细地讲一讲CLI是怎么写的，以及它的价值。
+CLI（ Command Line Interface）最近特别火，我还特意写了一篇文章分析了一下：[AI 时代，为什么说万物皆可 CLI？](https://nenocat.github.io/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E4%B8%87%E7%89%A9%E7%9A%86%E5%8F%AF%20CLI%EF%BC%9F/)。在码农眼中，命令行工具在日常开发中出现的频率很高，不管是数据处理脚本、自动化任务，还是代码辅助工具，背后基本都有 CLI 的影子。因此，本篇内容就来详细地讲一讲CLI是怎么写的，以及它的价值。
 
 ## 一、sys.argv
 
