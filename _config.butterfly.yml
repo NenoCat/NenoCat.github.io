@@ -53,7 +53,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.ico
+favicon: /img/nenocat-icon.ico
 
 avatar:
   img: /img/avatar.png
